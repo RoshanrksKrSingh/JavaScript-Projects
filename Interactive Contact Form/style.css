@@ -1,1 +1,44 @@
-
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    background-color: black;
+}
+#contactForm{
+    width: 300px; 
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+#btn{
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    background-color: rgb(244, 241, 239);
+}
+#name,#email,#message{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    width: 200px;
+    height: 30px;
+    padding-left: 5px;
+}
+#nameError,#emailError,#messageError{
+    color: red;
+}
