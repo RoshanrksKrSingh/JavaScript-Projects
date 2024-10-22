@@ -1,1 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.input-container{
+   width: 100%;
+   max-width: 500px;
+   text-align: center;
+    padding: 20px;
+}
+.input-container input{
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-block: 20px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-container input[type="text"]{
+    width: 70%;
+}
+
+.input-container input[type="button"]{
+    background-color: rgb(10, 165, 165);
+    color: #fff;
+    margin-left: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.input-container input[type="button"]:hover{
+    background-color: rgb(65, 221, 232);
+}
+
+ul{
+    width: 70%;
+    max-width: 450px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+}
+
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    border: .125px solid #d4cbcb;
+    border-radius: 8px;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: backgroun-color 0.5s  ;
+}
+
+ul li p{
+    flex-grow: 1;
+    padding: 2px;
+}
+
+ul li:hover{
+    background-color: #f6f6f3;
+}
+
+.btn{
+   background: none;
+   outline: none;
+   border: none;
+   cursor: pointer; 
+   padding: 8px;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.deleteBtn{
+    color: #f01f1f;
+}
+
+.editBtn{
+    color: #06069e;
+}
 
