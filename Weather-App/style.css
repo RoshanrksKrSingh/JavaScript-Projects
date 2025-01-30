@@ -1,1 +1,171 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Styling */
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.pexels.com/photos/6610117/pexels-photo-6610117.jpeg?auto=compress&cs=tinysrgb&w=400') no-repeat center center/cover;
+    color: white;
+    position: relative;
+    padding: 10px;
+}
+
+/* Main Container */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: rgba(0, 0, 0, 0.5); */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Input Box */
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.searchBox input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.searchBox button {
+    background: #5A9;
+    color: white;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    font-size: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBox button:hover {
+    background: #48a86f;
+}
+
+/* Location Not Found */
+.locatioNtFoud {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+    gap: 10px;
+}
+
+.locatioNtFoud img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Weather Body */
+.weatherBody {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.weatherBody img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.weatherBox {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.weatherBox .temprature {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.weatherBox .description {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+/* Weather Details */
+.weatherDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.weatherDetails > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1; /* Equal space for all details */
+    min-width: 120px; /* Prevent shrinking too much */
+}
+
+.weatherDetails i,
+.weatherDetails .material-symbols-outlined {
+    font-size: 24px;
+}
+
+.weatherDetails .text {
+    text-align: left;
+}
+
+.weatherDetails .text span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .weatherDetails {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
 
